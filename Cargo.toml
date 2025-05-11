@@ -1,0 +1,9 @@
+[workspace]
+
+members = ["bin/rei", "crates/backend"]
+
+default-member = "bin/rei"
+
+resolver = "2"
+
+[workspace.dependencies]
