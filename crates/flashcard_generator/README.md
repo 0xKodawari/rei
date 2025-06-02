@@ -1,0 +1,1 @@
+Generate Flashcards from video files directly or from MPV media player 
