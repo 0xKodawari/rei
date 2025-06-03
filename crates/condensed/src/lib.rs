@@ -1,12 +1,11 @@
 use anyhow::Result;
 use ez_ffmpeg::{FfmpegContext, FfmpegScheduler, Input, Output};
+use rand::Rng;
 use rayon::iter::{IndexedParallelIterator, IntoParallelIterator, ParallelIterator};
 use srtparse::from_file;
 use std::collections::HashMap;
 use std::fs::{read_dir, remove_file};
 use std::path::PathBuf;
-//use std::sync::Arc;
-use rand::Rng;
 use std::{
     fs::{File, remove_dir_all},
     io::Write,
@@ -324,23 +323,4 @@ fn clean_up(path: &str) -> Result<()> {
 }
 
 #[cfg(test)]
-mod tests {
-
-    #[test]
-    fn test_clean_up() {}
-
-    #[test]
-    fn test_sort_directories() {}
-
-    #[test]
-    fn test_generate_audio_clips() {}
-
-    #[test]
-    fn test_condense_audio_clips() {}
-
-    #[test]
-    fn test_multiple() {}
-
-    #[test]
-    fn test_generate_names() {}
-}
+mod tests {}
