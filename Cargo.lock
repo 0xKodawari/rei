@@ -178,6 +178,7 @@ version = "0.1.0"
 dependencies = [
  "anyhow",
  "clap",
+ "dotenv",
  "ez-ffmpeg",
  "rand",
  "rayon",
@@ -255,6 +256,12 @@ name = "crossbeam-utils"
 version = "0.8.21"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "d0a5c400df2834b80a4c3327b3aad3a4c4cd4de0629063962b03235697506a28"
+
+[[package]]
+name = "dotenv"
+version = "0.15.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "77c90badedccf4105eca100756a0b1289e191f6fcbdadd3cee1d2f614f97da8f"
 
 [[package]]
 name = "either"
@@ -547,13 +554,6 @@ name = "regex-syntax"
 version = "0.8.5"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "2b15c43186be67a4fd63bee50d0303afffcef381492ebe2c5d87f324e1b8815c"
-
-[[package]]
-name = "rei"
-version = "0.1.0"
-dependencies = [
- "condensed",
-]
 
 [[package]]
 name = "rustc-hash"

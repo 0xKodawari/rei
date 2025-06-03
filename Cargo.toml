@@ -1,8 +1,6 @@
 [workspace]
 
-members = ["bin/rei", "crates/condensed", "crates/flashcard_generator", "crates/scheduler", "crates/storage"]
-
-default-member = "bin/rei"
+members = ["crates/condensed", "crates/flashcard_generator", "crates/scheduler", "crates/storage"]
 
 resolver = "2"
 
