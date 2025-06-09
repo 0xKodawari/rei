@@ -1,6 +1,6 @@
 [workspace]
 
-members = ["crates/condensed", "crates/tracker"]
+members = ["crates/condensed", "crates/server", "crates/tracker"]
 
 resolver = "2"
 

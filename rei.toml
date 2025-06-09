@@ -1,0 +1,11 @@
+# Default configuration for Rei 
+
+# As of right now this is only designed for macOS compatability to work off the basis of that 
+data = ''
+
+# Automatically condense audio from shows watched on MPV
+
+condense = true
+
+# Local server to listen to events and handle them
+server = ''
