@@ -1,0 +1,8 @@
+[package]
+name = "rei"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+server = { path = "../../crates/server" }
+tracker = { path = "../../crates/tracker" }

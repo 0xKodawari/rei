@@ -5,6 +5,8 @@ use std::time::Duration;
 // Todo
 // 1. How to handle date changes and clean up between potential calls
 
+// --------------------------------- Functions and structures for tracking and keeping track of immersion ---------------------------------
+
 #[derive(Debug, Default, PartialEq, Eq, Clone)]
 pub struct DailyImmersion {
     // Start of the most recent interval of immersion
@@ -26,7 +28,6 @@ pub struct Goal {
 }
 
 impl Goal {
-    // If you stop multiple times in a row it will still count as if you are immersing
     pub fn stop(&mut self) {
         let date = Utc::now();
         let day = date.date_naive();
@@ -84,6 +85,30 @@ impl Immersion {
                 current: HashMap::new(),
                 total: Duration::ZERO,
             },
+        }
+    }
+}
+
+// --------------------------------- Functions and structures for level up system and display ---------------------------------
+
+pub struct User {
+    // Name of the user profile
+    pub name: String,
+    // Immersion Data
+    pub immersion: Immersion,
+    // Stats for the level system and display
+    pub stats: u64,
+    // Last day the user was online
+    pub last_login: NaiveDate,
+}
+
+impl User {
+    pub fn create(name: String) -> User {
+        User {
+            name,
+            immersion: Immersion::new(),
+            stats: 0,
+            last_login: Utc::now().date_naive(),
         }
     }
 }
