@@ -1,4 +1,5 @@
+#![no_std]
 mod http;
 mod quic;
-mod tcp;
+pub mod tcp;
 mod udp;
