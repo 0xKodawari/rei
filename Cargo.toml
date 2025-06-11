@@ -1,6 +1,6 @@
 [workspace]
 
-members = [ "bin/rei","crates/condensed", "crates/server", "crates/tracker"]
+members = [ "bin/rei","crates/condensed", "crates/primitives", "crates/runtime", "crates/server", "crates/tracker"]
 
 default-member = ["bin/rei"]
 

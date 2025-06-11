@@ -1,0 +1,1 @@
+This crate holds any primitives I might need to use in any `!#[no_std]` crates
