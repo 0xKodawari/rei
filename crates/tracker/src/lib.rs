@@ -1,9 +1,10 @@
 use chrono::{DateTime, NaiveDate, Utc};
-use std::collections::HashMap;
-use std::time::Duration;
+use std::{collections::HashMap, time::Duration};
 
 // Todo
 // 1. How to handle date changes and clean up between potential calls
+// 2. Eventually make this no std. Can find replacements for the std version of hashmap, and do more research as to whats going on in chrono for just the 
+//    specific parts that I need.
 
 // --------------------------------- Functions and structures for tracking and keeping track of immersion ---------------------------------
 
